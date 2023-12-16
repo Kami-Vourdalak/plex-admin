@@ -23,15 +23,6 @@ app.get("/", (_, res) => {
   res.status(200).send("ok");
 });
 
-// app.get("/users", (_, res) => {
-//   console.log("persons");
-//   setTimeout(() => {
-//     res.status(200).send({
-//       name: "Joseph",
-//       lastName: "Doe",
-//     });
-//   }, 12000);
-// });
 
 const port = process.env.PORT || 3000;
 const server = app.listen(port, () =>
